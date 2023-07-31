@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>随机重定向</title>
+</head>
+<body>
+    <script>
+        // 定义网址数组
+        const websites = [
+            "https://www.example1.com",
+            "https://www.example2.com",
+            "https://www.example3.com"
+            // 可以添加更多网址
+        ];
+
+        // 随机生成 0 到 websites 数组长度之间的整数
+        const randomIndex = Math.floor(Math.random() * websites.length);
+
+        // 使用随机生成的索引跳转到对应的网址
+        window.location.href = websites[randomIndex];
+    </script>
+</body>
+</html>
